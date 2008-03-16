@@ -1,0 +1,84 @@
+<!-- Google Total by Anil -->
+<!-- Feel free to set this as your homepage -->
+<!-- And why are you looking at the source? btw it is clean! -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Google Total</title>
+	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" title="main" charset="utf-8">
+	<script src="javascripts/jquery.js" type="text/javascript"></script>
+	<script>
+	
+	// Processes input keyword and query string to open result in Google.
+	function process()
+	{	
+		query_string = document.search_form.query_string.options[document.search_form.query_string.options.selectedIndex].value;
+		keyword = document.search_form.keywords.value;
+		l = query_string + keyword;
+		if (keyword == ""){
+			$("#keywords").val("Please enter text");
+			return false;
+		}
+		else if (keyword == "Please enter text") {
+			return false;
+		}
+		top.window.location = l;
+		return false;
+	}
+	
+	//clears search text box
+	function clear_search()
+	{		
+		keyword = $("#keywords").val();
+		if(keyword == "Please enter text") {
+			$("#keywords").val("");
+		}
+	}
+	</script>
+</head>
+<div id="wrap">
+	<div id="main_google_image">
+		<img src="logo.png">
+	</div>
+	<form method="post" onsubmit="return process();" name="search_form">
+		<div>
+			<span id="search_text_box">
+				<input size="33" name="keywords" value="" id="keywords" onfocus="return clear_search();">
+			</span>
+			<span id="select_search_type" name="search_type">
+				<select name="query_string" id="select_options">
+					<option selected value="http://www.google.com/search?hl=en&q=">Web</option>
+					<option value="http://images.google.com/images?q=">Images</option>
+					<option value="http://blogsearch.google.com/blogsearch?hl=en&q=">Blogs</option>
+					<option value="http://groups-beta.google.com/groups?q=">Groups</option>
+					<option value="http://www.google.com/codesearch?q=">Code</option>
+					<option value="http://news.google.com/news?q=">News</option>
+					<option value="http://froogle.google.com/froogle?q=">Froogle</option>
+					<option value="http://local.google.com/local?q=">Local</option>
+					<option value="http://video.google.com/videosearch?q=">Video</option>
+					<option value="http://www.google.com/musicsearch?q=">Music</option>
+					<option value="http://maps.google.com/maps?q=">Maps</option>
+					<option value="http://print.google.com/print?q=">Print</option>
+					<option value="http://www.google.com/search?hl=en&q=define+">Glossary</option>
+					<option value="http://scholar.google.com/scholar?q=">Scholar</option>
+					<option value="http://catalogs.google.com/catalogs?q=">Catalogs</option>
+					<option value="http://answers.google.com/answers/search?q=">Answers</option>
+					<option value="http://labs.google.com/ridefinder?near=">Ride Finder</option>
+					<option value="http://www.google.com/search?hl=en&q=Weather ">Weather</option>
+					<option value="http://www.google.com/microsoft?hl=en&lr=&q=">Microsoft</option>
+					<option value="http://www.google.com/linux?hl=en&lr=&q=">Linux</option>
+					<option value="http://www.google.com/bsd?hl=en&lr=&q=">BSD</option>
+					<option value="http://www.google.com/mac?hl=en&lr=&q=">Mac</option>		
+				</select>
+			</span>
+		</div>
+		<div id="search_button">
+			<input type="submit" value	="Search" style="width:200px">
+		</div>
+		<div id="contact">
+			<a href="mailto:anil@digitalcodes.org">anil@digitalcodes.org</a>
+		</div>
+	</form>
+</div>
+</html>

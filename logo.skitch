@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Skitch 1.0 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" version="1.1" baseProfile="full" width="364" height="108" overflow="hidden" skitchDocumentType="3" skitchVisibleWidth="364.000000" skitchVisibleHeight="108.000000" skitchCustomColor="rgb(251,79,255)" skitchCustomColorAlpha="1.000000" skitchBrushColor="rgb(255,114,208)" skitchBrushColorAlpha="1.000000" skitchBrushSize="12.000000" skitchTool="1">
+    <rect width="364" height="108" x="0" y="0" fill="rgb(255,255,255)" />
+    <g skitchTextX="2.000000" skitchTextY="16.000000" skitchFontSize="64.000000" skitchHasOutline="1.000000" skitchHasShadow="1" font-size="64.000000" font-family="HelveticaNeue" fill="rgb(25,119,255)">
+        <text x="-4.000000" y="90.800003">Google Total</text>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+#wrap {
+	margin: 70px auto;
+	width: 390px;
+}
+
+#main_google_image {
+	margin: 0pt auto;
+	width: 400px;
+	margin-bottom: 20px;;
+}
+
+#search_button {
+	align:center;
+	margin:0pt auto;
+	width: 230px;
+}
+
+a { 
+	text-decoration: none;
+}
+
+#links {
+	float:right;
+	margin:0pt;
+}
+
+#header {
+	font-size: 7em;
+	color: grey;
+	font-weight: bold;
+	letter-spacing: -10px;
+	text-align:center;
+	margin-top: 100px;
+	text-shadow: #333333 3px 4px 1px;
+}
+
+#coming_soon {
+	font-size: 3em;
+	text-align:center;
+	color: black;
+	font-weight: bold;
+	text-shadow: grey 4px 4px 1px;
+}
+
+#contact {
+	margin-top: 80px;
+	font-family: verdana;
+	text-align:center;
+}
