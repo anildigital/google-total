@@ -1,18 +1,24 @@
 #wrap {
-	margin: 70px auto;
-	width: 390px;
+	margin: 0px auto
 }
 
 #main_google_image {
 	margin: 0pt auto;
-	width: 400px;
-	margin-bottom: 20px;;
+	width: 364px;
+	margin-top:80px;
+	margin-bottom: 20px;
 }
 
-#search_button {
-	align:center;
+#search_box_select_box {
 	margin:0pt auto;
-	width: 230px;
+	text-align: center;
+	width: 480px;
+}
+
+#search_button{
+	margin:0pt auto;
+	margin-top:2pt;
+	text-align: center;
 }
 
 a { 
@@ -34,16 +40,9 @@ a {
 	text-shadow: #333333 3px 4px 1px;
 }
 
-#coming_soon {
-	font-size: 3em;
-	text-align:center;
-	color: black;
-	font-weight: bold;
-	text-shadow: grey 4px 4px 1px;
-}
-
 #contact {
-	margin-top: 80px;
+	margin: 0pt auto;
+	margin-top: 80pt;
 	font-family: verdana;
 	text-align:center;
 }
