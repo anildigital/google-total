@@ -7,35 +7,8 @@
 <head>
 	<title>Google Total</title>
 	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" title="main" charset="utf-8">
-	<script src="javascripts/jquery.js" type="text/javascript"></script>
-	<script>
-
-	// Processes input keyword and query string to open result in Google.
-	function process()
-	{	
-		query_string = document.search_form.query_string.options[document.search_form.query_string.options.selectedIndex].value;
-		keyword = document.search_form.keywords.value;
-		l = query_string + keyword;
-		if (keyword == ""){
-			$("#keywords").val("Please enter text");
-			return false;
-		}
-		else if (keyword == "Please enter text") {
-			return false;
-		}
-		top.window.location = l;
-		return false;
-	}
-
-	//clears search text box
-	function clear_search()
-	{		
-		keyword = $("#keywords").val();
-		if(keyword == "Please enter text") {
-			$("#keywords").val("");
-		}
-	}
-	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="javascripts/application.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -45,10 +18,10 @@
 		<form method="post" onsubmit="return process();" name="search_form">
 			<div id="search_box_select_box">
 				<span id="search_text_box">
-					<input size="33" name="keywords" value="" id="keywords" onfocus="return clear_search();">
+					<input size="42" name="keywords" value="" id="keywords" onfocus="return clear_search();">
 				</span>
 				<span id="select_search_type" name="search_type">
-					<select name="query_string" id="select_options">
+					<select name="query_string" id="select_options" onchange="set_focus();">
 						<option selected value="http://www.google.com/search?hl=en&q=">Web</option>
 						<option value="http://youtube.com/results?search_query=">YouTube</option>
 						<option value="http://images.google.com/images?q=">Images</option>
