@@ -24,6 +24,14 @@
 a { 
 	text-decoration: none;
 }
+img {
+	border:0px;
+}
+
+.center{
+	margin-top:200px;
+	text-align:center;
+}
 
 #links {
 	float:right;
@@ -44,5 +52,6 @@ a {
 	margin: 0pt auto;
 	margin-top: 80pt;
 	font-family: verdana;
+	font-size:14px;
 	text-align:center;
 }

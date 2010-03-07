@@ -26,6 +26,15 @@ function set_focus(){
 	$('#keywords').focus();
 }
 
+function tweet_this(){
+	$('#wrap').fadeOut('slow', function(){
+		$('body').append("<div class='center'>Tweeting...</div>")
+		return false;
+	}) 
+	href = "http://twitter.com/home?status=I use http://www.googletotal.com. I love it! It is awesome!";
+	top.window.location.href = href;
+}
+
 // Google like effect
 $(document).ready(function() {
 	$('#contact').hide();
